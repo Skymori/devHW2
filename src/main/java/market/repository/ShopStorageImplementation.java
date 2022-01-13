@@ -7,7 +7,9 @@ import java.util.Arrays;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
+// ShopStorageImpl will be enough
+// please be carefully with inheritance we should use it only for is-a relationships
+// h
 public class ShopStorageImplementation<T extends EntityId<Id> & Selling, Id> implements ShopStorage<T, Id> {
     private final Map<Id, T> productBucket;
 

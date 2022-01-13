@@ -12,16 +12,17 @@ class ProductTest {
     private final double accuracy = 0.001;
     @BeforeEach
     void setUp() {
-        product = new Product("A", 1.25, 3,3.0);
+        product = new Product("B", 1.00, 6,5.0);
     }
 
     @AfterEach
     void tearDown() {
     }
 
+    //please read about test naming convention
     @Test
     void getPrice() {
-        assertEquals(3.0, product.getPrice(3L),accuracy);
+        assertEquals(5.0, product.getPrice(6L),accuracy);
     }
 
 }
