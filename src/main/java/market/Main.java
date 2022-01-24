@@ -1,12 +1,12 @@
 package market;
 
 import market.entity.Product;
-import market.repository.ShopStorageImplementation;
+import market.repository.ShopStorageImpl;
 import market.service.ProductBucket;
 
 public class Main {
     public static void main(String[] args) {
-        ProductBucket productBucket = new ProductBucket(new ShopStorageImplementation<>(
+        ProductBucket productBucket = new ProductBucket(new ShopStorageImpl<>(
                 new Product("A", 1.25, 3, 3.0),
                 new Product("B", 4.25),
                 new Product("C", 1.0, 6, 5.0),

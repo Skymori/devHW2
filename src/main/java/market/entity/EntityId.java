@@ -1,10 +1,10 @@
 package market.entity;
 
 @FunctionalInterface
-public interface EntityId<Id> {
-    Id getId();
+public interface EntityId<E> {
+    E getId();
 
-    /*
+    /* ✅
     Java Generics Naming Convention
 E - Element (used extensively by the Java Collections Framework)
 K - Key.
